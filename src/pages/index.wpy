@@ -1,9 +1,103 @@
 <template>
-  测试页面
+  <view class="mt20"></view>
+  <view class="weui-panel weui-panel_access form ">
+    <view class="weui-panel__hd">网点位置导航</view>
+    <view class="weui-panel__bd">
+      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">莆田西征管所网点</view>
+          <view class="weui-media-box__desc">网点地址：莆田市城厢区华亭镇山牌村莆田西征管所办公楼</view>
+        </view>
+      </navigator>
+      <view class="btn-bar row-between">
+        <text class="phone-text">联系电话：0591-87777777</text>
+        <view>
+          <button class="weui-btn mini-btn" type="default" size="mini">拨打电话</button>
+          <button class="weui-btn mini-btn" type="primary" size="mini">立即导航</button>
+        </view>
+      </view>
+      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">仙游城区征管所网点 </view>
+          <view class="weui-media-box__desc">网点地址：莆田市仙游县鲤南镇下楼村高速公路仙游城区征管所办公楼</view>
+        </view>
+      </navigator>
+      <view class="btn-bar row-between">
+        <text class="phone-text">联系电话：0591-87777777</text>
+        <view>
+          <button class="weui-btn mini-btn" type="default" size="mini">拨打电话</button>
+          <button class="weui-btn mini-btn" type="primary" size="mini">立即导航</button>
+        </view>
+      </view>
+      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">涵江江口征管所网点</view>
+          <view class="weui-media-box__desc">网点地址：莆田市涵江区涵江区江口镇新前村高速公路涵江江口征管所办公楼</view>
+        </view>
+      </navigator>
+      <view class="btn-bar row-between">
+        <text class="phone-text">联系电话：0591-87777777</text>
+        <view>
+          <button class="weui-btn mini-btn" type="default" size="mini">拨打电话</button>
+          <button class="weui-btn mini-btn" type="primary" size="mini">立即导航</button>
+        </view>
+      </view>
+      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">市行政服务中心网点</view>
+          <view class="weui-media-box__desc">网点地址：莆田市荔城区荔城中大道1998号3号楼市行政大厅85号窗口</view>
+        </view>
+      </navigator>
+      <view class="btn-bar row-between">
+        <text class="phone-text">联系电话：0591-87777777</text>
+        <view>
+          <button class="weui-btn mini-btn" type="default" size="mini">拨打电话</button>
+          <button class="weui-btn mini-btn" type="primary" size="mini">立即导航</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--页脚 -->
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-footer mt20">
+      <view class="weui-footer__links">
+        <navigator url="" class="weui-footer__link">乐享启创提供技术支持</navigator>
+      </view>
+      <view class="weui-footer__text">Copyright © 2016-2017 leshare.shop</view>
+    </view>
+  </view>
 </template>
 
 <style lang="scss">
   @import "../styles/variable";
+  .form .weui-media-box{
+    padding-bottom: 20rpx;
+  }
+  .btn-bar{
+    height: 31px;
+    padding-bottom: 15rpx;
+    .phone-text{
+      font-size: $text-xs;
+      color: $color-muted;
+      margin-left: 15px;
+    }
+    button{
+      margin: 0 20rpx 0 0;
+    }
+  }
 </style>
 
 <script>

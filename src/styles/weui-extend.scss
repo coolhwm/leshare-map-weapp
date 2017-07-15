@@ -9,6 +9,9 @@
   .muted{
     color:$color-muted;
   }
+  .weui-media-box__desc,.weui-panel__hd{
+    font-size: 13px;
+  }
 }
 
 %weui-cells-display{
