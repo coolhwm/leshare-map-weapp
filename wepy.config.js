@@ -1,13 +1,9 @@
-const path = require('path');
-var prod = process.env.NODE_ENV === 'production'
+const prod = process.env.NODE_ENV === 'production'
 
 module.exports = {
   wpyExt: '.wpy',
   build: {
     web: {
-      htmlTemplate: path.join('src', 'index.template.html'),
-      htmlOutput: path.join('web', 'index.html'),
-      jsOutput: path.join('web', 'index.js')
     }
   },
   eslint: true,
@@ -15,9 +11,9 @@ module.exports = {
     less: {
       compress: true
     },
-    /*sass: {
-      outputStyle: 'compressed'
-    },*/
+    sass: {
+      outputStyle: 'expanded'
+    },
     babel: {
       sourceMap: true,
       presets: [
@@ -36,10 +32,9 @@ module.exports = {
 }
 
 if (prod) {
-
   delete module.exports.compilers.babel.sourcesMap;
   // 压缩sass
-  // module.exports.compilers['sass'] = {outputStyle: 'compressed'}
+  module.exports.compilers['sass'] = {outputStyle: 'compressed'}
 
   // 压缩less
   module.exports.compilers['less'] = {compress: true}
