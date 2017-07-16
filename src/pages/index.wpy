@@ -3,70 +3,25 @@
   <view class="weui-panel weui-panel_access form ">
     <view class="weui-panel__hd">网点位置导航</view>
     <view class="weui-panel__bd">
-      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-          <image class="weui-media-box__thumb" src="http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim" />
+      <!--网点展现-->
+      <block wx:for="{{stations}}" wx:key="seq">
+        <view url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" @tap="preview({{item.images}})">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{item.preview_image}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{item.name}}</view>
+            <view class="weui-media-box__desc">网点地址：{{item.address}}</view>
+          </view>
         </view>
-        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-          <view class="weui-media-box__title">莆田西征管所网点</view>
-          <view class="weui-media-box__desc">网点地址：莆田市城厢区华亭镇山牌村莆田西征管所办公楼</view>
+        <view class="btn-bar row-between">
+          <text class="phone-text">联系电话：{{item.phone}}</text>
+          <view>
+            <button class="weui-btn mini-btn" type="default" size="mini" @tap="phone({{item.phone}})">拨打电话</button>
+            <button class="weui-btn mini-btn" type="primary" size="mini" @tap="nav({{item}})">立即导航</button>
+          </view>
         </view>
-      </navigator>
-      <view class="btn-bar row-between">
-        <text class="phone-text">联系电话：0591-87777777</text>
-        <view>
-          <button class="weui-btn mini-btn" type="default" size="mini">拨打电话</button>
-          <button class="weui-btn mini-btn" type="primary" size="mini">立即导航</button>
-        </view>
-      </view>
-      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-          <image class="weui-media-box__thumb" src="http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim" />
-        </view>
-        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-          <view class="weui-media-box__title">仙游城区征管所网点 </view>
-          <view class="weui-media-box__desc">网点地址：莆田市仙游县鲤南镇下楼村高速公路仙游城区征管所办公楼</view>
-        </view>
-      </navigator>
-      <view class="btn-bar row-between">
-        <text class="phone-text">联系电话：0591-87777777</text>
-        <view>
-          <button class="weui-btn mini-btn" type="default" size="mini">拨打电话</button>
-          <button class="weui-btn mini-btn" type="primary" size="mini">立即导航</button>
-        </view>
-      </view>
-      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-          <image class="weui-media-box__thumb" src="http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim" />
-        </view>
-        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-          <view class="weui-media-box__title">涵江江口征管所网点</view>
-          <view class="weui-media-box__desc">网点地址：莆田市涵江区涵江区江口镇新前村高速公路涵江江口征管所办公楼</view>
-        </view>
-      </navigator>
-      <view class="btn-bar row-between">
-        <text class="phone-text">联系电话：0591-87777777</text>
-        <view>
-          <button class="weui-btn mini-btn" type="default" size="mini">拨打电话</button>
-          <button class="weui-btn mini-btn" type="primary" size="mini">立即导航</button>
-        </view>
-      </view>
-      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-          <image class="weui-media-box__thumb" src="http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim" />
-        </view>
-        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-          <view class="weui-media-box__title">市行政服务中心网点</view>
-          <view class="weui-media-box__desc">网点地址：莆田市荔城区荔城中大道1998号3号楼市行政大厅85号窗口</view>
-        </view>
-      </navigator>
-      <view class="btn-bar row-between">
-        <text class="phone-text">联系电话：0591-87777777</text>
-        <view>
-          <button class="weui-btn mini-btn" type="default" size="mini">拨打电话</button>
-          <button class="weui-btn mini-btn" type="primary" size="mini">立即导航</button>
-        </view>
-      </view>
+      </block>
     </view>
   </view>
 
@@ -80,6 +35,46 @@
     </view>
   </view>
 </template>
+
+<script>
+  import wepy from 'wepy';
+  import base from '../mixins/base';
+  import {data} from '../data/data';
+
+  export default class Index extends wepy.page {
+    def = {
+      stations: []
+    }
+    data = {...this.def};
+    onLoad () {
+      this.stations = data;
+    };
+    methods = {
+      preview(images) {
+        wepy.previewImage({
+          urls: images
+        })
+      },
+      phone(phone) {
+        wepy.makePhoneCall({
+          phoneNumber: phone
+        })
+      },
+      nav(staticon) {
+        wepy.openLocation({
+          name: staticon.name,
+          address: staticon.address,
+          latitude: staticon.latitude,
+          longitude: staticon.longitude
+        });
+      }
+    };
+    mixins = [base];
+    config = {
+      navigationBarTitleText: '莆田高速ETC'
+    };
+  }
+</script>
 
 <style lang="scss">
   @import "../styles/variable";
@@ -99,22 +94,3 @@
     }
   }
 </style>
-
-<script>
-  import wepy from 'wepy';
-  import base from '../mixins/base';
-  // import Tips from '../../utils/Tips';
-
-  export default class Index extends wepy.page {
-    def = {}
-    data = {...this.def};
-    onLoad (options) {
-    };
-    events = {};
-    components = {};
-    mixins = [base];
-    config = {
-      navigationBarTitleText: '莆田高速ETC'
-    };
-  }
-</script>
