@@ -6,11 +6,9 @@ export const data = [
     'phone': '13700000000',
     'latitude': '25.399509',
     'longitude': '118.977344',
-    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
+    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-pt.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
     'images': [
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg',
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg',
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg'
+      'http://ostb6zm4z.bkt.clouddn.com/etc-pt.jpg'
     ]
   },
   {
@@ -20,11 +18,9 @@ export const data = [
     'phone': '13700000000',
     'latitude': '25.376232',
     'longitude': '118.735901',
-    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
+    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-xy.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
     'images': [
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg',
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg',
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg'
+      'http://ostb6zm4z.bkt.clouddn.com/etc-xy.jpg'
     ]
   },
   {
@@ -34,11 +30,9 @@ export const data = [
     'phone': '13700000000',
     'latitude': '25.492494',
     'longitude': '119.188597',
-    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
+    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-hjk.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
     'images': [
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg',
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg',
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg'
+      'http://ostb6zm4z.bkt.clouddn.com/etc-hjk.jpg'
     ]
   },
   {
@@ -48,11 +42,9 @@ export const data = [
     'phone': '13700000000',
     'latitude': '25.451307',
     'longitude': '119.008712',
-    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
+    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
     'images': [
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg',
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg',
-      'http://ostb6zm4z.bkt.clouddn.com/etc-logo.jpg'
+      'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg'
     ]
   }
 ];
