@@ -1,0 +1,49 @@
+<template>
+  <view class="container column-center">
+    <view class="contact-box row-center">
+      <contact-button
+        type="default-light"
+        size="27"
+        session-from="weapp"
+      >
+      </contact-button>
+    </view>
+    <text class="mt20">点击按钮联系在线客服</text>
+  </view>
+  <view class="tab-border" />
+</template>
+
+<style lang="scss">
+  @import "../styles/variable";
+  .container{
+    align-items: center;
+    height: 750rpx;
+
+    .contact-box{
+      background-color: $color-primary;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+    }
+  }
+
+</style>
+
+<script>
+  import wepy from 'wepy';
+  import base from '../mixins/base';
+  // import Tips from '../utils/Tips';
+
+  export default class Contact extends wepy.page {
+    def = {}
+    data = {...this.def};
+    onLoad (options) {
+    };
+    events = {};
+    components = {};
+    mixins = [base];
+    config = {
+      navigationBarTitleText: '客服'
+    };
+  }
+</script>
