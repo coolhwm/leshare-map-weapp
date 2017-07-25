@@ -73,7 +73,7 @@
     };
     mixins = [base];
     config = {
-      navigationBarTitleText: '莆田高速ETC'
+      navigationBarTitleText: '莆田高速闽通卡'
     };
   }
 </script>
