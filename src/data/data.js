@@ -52,11 +52,12 @@ export const data = [
     'name': '秀屿埭头所网点',
     'address': '莆田市秀屿区埭头镇武盛村高速公路秀屿埭头收费站12车道',
     'phone': '0594-6217677',
-    'latitude': '',
-    'longitude': '',
-    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
+    'latitude': '25.273590',
+    'longitude': '119.196220',
+    'preview_image': 'http://img.leshare.shop/ptect/xy-1.jpg/small',
     'images': [
-      'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg'
+      'http://img.leshare.shop/ptect/xy-1.jpg',
+      'http://img.leshare.shop/ptect/xy-2.jpg'
     ]
   },
   {
@@ -64,23 +65,25 @@ export const data = [
     'name': '湄洲岛征管所网点',
     'address': '莆田市秀屿区山亭乡利山村高速公路湄洲岛征管所18道',
     'phone': '0594-2353223',
-    'latitude': '25.451307',
-    'longitude': '119.008712',
-    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
+    'latitude': '25.165200',
+    'longitude': '119.115600',
+    'preview_image': 'http://img.leshare.shop/ptect/mzd-1.jpg/small',
     'images': [
-      'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg'
+      'http://img.leshare.shop/ptect/mzd-1.jpg',
+      'http://img.leshare.shop/ptect/mzd-2.jpg'
     ]
   },
   {
     'seq': '7',
     'name': '仙游盖尾所网点',
-    'address': '福建省莆田市仙游县盖尾镇东井宫村仙游盖尾收费站10车道',
+    'address': '莆田市仙游县盖尾镇东井宫村仙游盖尾收费站10车道',
     'phone': '0594-8053670',
-    'latitude': '25.451307',
-    'longitude': '119.008712',
-    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
+    'latitude': '25.383520',
+    'longitude': '118.791410',
+    'preview_image': 'http://img.leshare.shop/ptect/xygw-1.jpg/small',
     'images': [
-      'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg'
+      'http://img.leshare.shop/ptect/xygw-1.jpg',
+      'http://img.leshare.shop/ptect/xygw-2.jpg'
     ]
   },
   {
@@ -88,11 +91,12 @@ export const data = [
     'name': '仙游龙华所网点',
     'address': '仙游县龙华镇貂峰村仙游龙华高速公路征管所14车道',
     'phone': '0594-8179166',
-    'latitude': '25.451307',
-    'longitude': '119.008712',
-    'preview_image': 'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg?imageView2/1/w/120/h/120/format/jpg/q/75|imageslim',
+    'latitude': '25.342630',
+    'longitude': '118.630500',
+    'preview_image': 'http://img.leshare.shop/ptect/xylh-1.jpg/small',
     'images': [
-      'http://ostb6zm4z.bkt.clouddn.com/etc-xz.jpg'
+      'http://img.leshare.shop/ptect/xylh-1.jpg',
+      'http://img.leshare.shop/ptect/xylh-2.jpg'
     ]
   }
 ];
