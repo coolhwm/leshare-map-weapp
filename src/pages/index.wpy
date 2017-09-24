@@ -28,10 +28,10 @@
   <view class="tab-border" />
 
   <!--页脚 -->
-  <view class="page__bd page__bd_spacing">
+  <view class="page__bd page__bd_spacing" >
     <view class="weui-footer mt20">
-      <view class="weui-footer__links">
-        <navigator url="" class="weui-footer__link">乐享启创提供技术支持</navigator>
+      <view class="weui-footer__links" @tap="ad">
+        <view url="" class="weui-footer__link">乐享启创提供技术支持</view>
       </view>
       <view class="weui-footer__text">Copyright © 2016-2017 leshare.shop</view>
     </view>
@@ -51,6 +51,9 @@
     onLoad () {
       this.stations = data;
     };
+    onShareAppMessage () {
+      return {};
+    }
     methods = {
       preview(images) {
         wepy.previewImage({
@@ -68,6 +71,11 @@
           address: staticon.address,
           latitude: Number(staticon.latitude),
           longitude: Number(staticon.longitude)
+        });
+      },
+      ad() {
+        wepy.makePhoneCall({
+          phoneNumber: '15960163650'
         });
       }
     };
